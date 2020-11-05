@@ -15,24 +15,20 @@ function leavesPrintOut(root) {
   if (root.right) leavesPrintOut(root.right);
   return;
 }
-/*
-leavesCount(node, count) {
-  if (node === undefined) node = this.root;
-  if (count === undefined) count = 0;
+
+function leavesCount(node, count = 0) {
   if (!node) return count;
 
-  if (!node.left && !node.right) {
-    console.log(`node is ${node.val} and count is: ${count}`)
-    return ++count;
-  }
+  if (!node.left && !node.right) return ++count;
 
-  count = this.leavesCount(node.left, count);
-  count = this.leavesCount(node.right, count);
+  count = leavesCount(node.left, count);
+  count = leavesCount(node.right, count);
 
   return count;
-} */
+} 
 
 let myTree = new BinaryTree;
 myTree.createPreorder(['a', 'b', 'c', null, null, null, 'd', 'e','f',null,null, null, 'g']);
 
 leavesPrintOut(myTree.root);
+console.log(leavesCount(myTree.root));
