@@ -1,22 +1,21 @@
 import BinaryTree from "./BinaryTreeClass.mjs";
 
-let myTree = new BinaryTree;
-myTree.createPreorder([1, null, 2, 3]);
-console.log(myTree.traversePreOrder()); // 1 2 3 
-
-/* 
-leavesPrintOut(node) {
-  if (node === undefined) node = this.root;
-  if (!node) return;
-
-  if (!node.left && !node.right) {
-    console.log(node.val);
+function leavesPrintOut(root) {
+  
+  if (!root) {
+    console.log('No leaves!');
     return;
   }
-  this.leavesPrintOut(node.left);
-  this.leavesPrintOut(node.right);
-}
 
+  if (!root.left && !root.right) {
+    console.log(root.val);
+    return;
+  }
+  if (root.left) leavesPrintOut(root.left);
+  if (root.right) leavesPrintOut(root.right);
+  return;
+}
+/*
 leavesCount(node, count) {
   if (node === undefined) node = this.root;
   if (count === undefined) count = 0;
@@ -32,3 +31,8 @@ leavesCount(node, count) {
 
   return count;
 } */
+
+let myTree = new BinaryTree;
+myTree.createPreorder(['a', 'b', 'c', null, null, null, 'd', 'e','f',null,null, null, 'g']);
+
+leavesPrintOut(myTree.root);
