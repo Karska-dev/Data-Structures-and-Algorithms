@@ -1,4 +1,4 @@
-import BinaryTree from "./BinaryTreeClass.mjs";
+import { BinaryTree } from "./BinaryTreeClass.mjs";
 
 function leavesPrintOut(root) {
   
