@@ -24,7 +24,15 @@ class BinarySearchTree extends BinaryTree {
 
   // determine if it is a valid binary search tree (BST)
   validate() {
-    return false;
+    let arr = this.traverseInOrder();
+    if (arr.length === 1) return true;
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < arr[i-1]) {
+        console.log(arr[i]);
+        return false;
+      }
+    }
+    return true;
   }
 
 }
@@ -32,7 +40,8 @@ class BinarySearchTree extends BinaryTree {
 export {BinarySearchTreeNode, BinarySearchTree};
 
 let myBST = new BinarySearchTree();
-myBST.createPreOrder([5, 2, 1, null, null, 4, 3, null, null, null, 6, null, 7]);
+//myBST.createPreOrder([5, 2, 1, null, null, 4, 3, null, null, null, 6, null, 7]);
+myBST.createPreOrder([5, 1, null, null, 4, 3, 6]);
 console.log(myBST.traversePreOrder());
 console.log(myBST.traverseInOrder());
-console.log(myBST.traversePostOrder());
+console.log(myBST.validate());

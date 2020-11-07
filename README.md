@@ -4,6 +4,7 @@ Currently in **JavaScript**.
 
 ## Arrays
 [Merge Intervals](JS/Arrays/MergeIntervals.js)
+[Odd Occurencies In Array](JS/Arrays/OddOccurencesInArray.js)
 
 ## Tree
 [Binary Tree class](JS/Tree/BinaryTreeClass.mjs)  
