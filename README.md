@@ -13,3 +13,6 @@ Currently in **JavaScript**.
 
 [Binary Search Tree class](JS/Tree/BinarySearchTree/BinarySearchTree.mjs)  
 [Second Largest Element in BST](/Users/Alexa/Documents/GitHub/algorithms/JS/Tree/BinarySearchTree/SecondLargestElement.mjs)
+
+## Other
+[Minimal Frog Jumps](JS/Other/FrogJmp.js)
