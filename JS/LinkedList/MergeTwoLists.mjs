@@ -18,7 +18,7 @@ The number of nodes in both lists is in the range [0, 50].
 -100 <= Node.val <= 100
 Both l1 and l2 are sorted in non-decreasing order.
 */
-import LinkedList from './LinkedList.mjs';
+import {LinkedList} from './LinkedList.mjs';
 
 function mergeTwoLists(a, b) {
   let c = new LinkedList();
@@ -46,7 +46,7 @@ let a = {
     },
   },
 };
-
+console.log(LinkedList.printOutList(a));
 let b = {
   'value': 1, 'next': {
     'value': 3, 'next': {
@@ -54,5 +54,5 @@ let b = {
     },
   },
 };
-
-console.log(mergeTwoLists(a, b));
+console.log(LinkedList.printOutList(b));
+console.log(LinkedList.printOutList(mergeTwoLists(a, b)));
