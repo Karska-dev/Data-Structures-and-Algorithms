@@ -11,6 +11,9 @@ Currently in **JavaScript**.
 ## Strings
 [Reverse String in Place](JS/Strings/ReverseString.js)
 
+## Sorting
+[Bubble Sort](JS/Sorting/BubbleSort.js)  
+[Merge Sort](JS/Sorting/MergeSort.js)
 ## LinkedList
 [Linked List class](JS/LinkedList/LinkedList.mjs)
 [Merge Two Linked Lists](JS/LinkedList/MergeTwoLists.mjs)
