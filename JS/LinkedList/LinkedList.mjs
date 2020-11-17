@@ -19,6 +19,16 @@ class LinkedList {
     }
     return str.join('');
   }
+
+  static createFromArr(arr) {
+    const list = new ListNode(arr[0]);
+    let node = list;
+    for (let i = 1; i < arr.length; i++){
+      node.next = new ListNode(arr[i]);
+      node = node.next;
+    }
+    return list;
+  }
 }
 
 export {ListNode, LinkedList};
