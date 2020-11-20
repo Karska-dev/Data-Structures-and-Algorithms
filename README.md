@@ -9,7 +9,7 @@ Currently in **JavaScript**.
 [Odd Occurencies In Array](JS/Arrays/OddOccurencesInArray.js)
 
 ## Strings
-[Reverse String in Place](JS/Strings/ReverseString.js)
+[Reverse String in Place](JS/Strings/ReverseString.js) - updated with variations from real interview
 
 ## Sorting
 [Bubble Sort](JS/Sorting/BubbleSort.js)  
