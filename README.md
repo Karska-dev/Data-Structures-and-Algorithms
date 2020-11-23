@@ -5,7 +5,7 @@ Currently in **JavaScript**.
 [Shape class](JS/Class/Shape.js)
 ## Arrays
 [Merge Intervals](JS/Arrays/MergeIntervals.js)
-[Interval List Intersection](JS/Arrays/IntervelIntersection.js)
+[Interval List Intersection](JS/Arrays/IntervalIntersection.js)
 [Odd Occurencies In Array](JS/Arrays/OddOccurencesInArray.js)
 
 ## Strings
